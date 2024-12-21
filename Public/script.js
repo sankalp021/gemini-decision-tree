@@ -7,7 +7,7 @@ document.getElementById("decision-form").addEventListener("submit", async (event
   const budget = document.getElementById("budget").value;
 
   // Send data to the server
-  const response = await fetch("/recommendation", {
+  const response = await fetch("https://gemini-decision-tree.onrender.com/recommendation", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
