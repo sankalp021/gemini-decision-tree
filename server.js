@@ -1,6 +1,7 @@
 
 const express = require("express");
 const bodyParser = require("body-parser");
+const cors = require("cors"); // Import cors
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 const app = express();
