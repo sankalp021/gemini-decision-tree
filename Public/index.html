@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Decision Tree</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Interactive Decision Tree</h1>
+      <p>Answer the questions below to get a personalized recommendation!</p>
+    </header>
+    <main>
+      <form id="decision-form">
+        <div class="form-group">
+          <label for="preference">Do you prefer the mountains or the beach?</label>
+          <select id="preference" name="preference" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="Mountains">Mountains</option>
+            <option value="Beach">Beach</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="type">Are you looking for adventure or relaxation?</label>
+          <select id="type" name="type" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="Adventure">Adventure</option>
+            <option value="Relaxation">Relaxation</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="budget">What’s your budget?</label>
+          <select id="budget" name="budget" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+          </select>
+        </div>
+        <button type="submit">Get Recommendation</button>
+      </form>
+
+      <div id="result" class="hidden">
+        <h2>Recommendation</h2>
+        <p id="recommendation-text"></p>
+        <div id="recommendation-image"></div>
+      </div>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
