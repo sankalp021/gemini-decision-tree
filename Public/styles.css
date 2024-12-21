@@ -8,24 +8,38 @@ body, h1, h2, p, select, button {
 /* Body Styling */
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #74ebd5, #9face6);
+  background: linear-gradient(to right, #000000, #02aab3);
   color: #333;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
 }
-
+.bg-container {
+  position: relative;
+  width: 80%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url('tourr.jpg') center/cover no-repeat;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
+}
 /* Container */
 .container {
-  background: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
   padding: 20px;
-  max-width: 500px;
+  margin: 20px;
+  max-width: 400px;
   width: 100%;
   text-align: center;
+  animation: slideIn 1s ease-out;
 }
+
 
 /* Header */
 header h1 {
@@ -36,7 +50,7 @@ header h1 {
 
 header p {
   margin-bottom: 20px;
-  color: #7f8c8d;
+  color: #4f5050;
 }
 
 /* Form */
