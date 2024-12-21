@@ -12,7 +12,7 @@ const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
 app.use(cors({
-  origin: 'http://localhost:3000', // Allow your frontend URL
+  origin: 'https://gemini-decision-tree.vercel.app/', // Allow your frontend URL
   methods: ['GET', 'POST'], // Allow specific methods if necessary
 }));
 
