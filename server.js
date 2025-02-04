@@ -23,7 +23,7 @@ app.use(express.static("public")); // Serve frontend files
 app.post("/recommendation", async (req, res) => {
   const { preference, type, budget } = req.body;
 
-  const prompt = `Suggest a travel destination for someone who prefers the ${preference}, wants ${type}, and has a ${budget} budget in under 100 words.`;
+  const prompt = `Suggest a travel destination, for someone from india who prefers the ${preference}, wants ${type}, and has a ${budget} budget in under 100 words.`;
   try {
     
     
